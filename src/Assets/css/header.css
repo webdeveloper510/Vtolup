@@ -111,7 +111,9 @@ header {
 .container {
   max-width: 1430px;
 }
-
+a.btn.btn.btn-primary:hover {
+  color: #fff;
+}
 
 @media (max-width: 1199px) {
 header {
