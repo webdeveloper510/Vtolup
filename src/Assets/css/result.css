@@ -1,0 +1,251 @@
+.iConteXt_List i {
+    font-size: 24px;
+    color: #0d6efd;
+  }
+  
+  .borderBox {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+  }
+  
+  .airlineOption a {
+    color: #6c757d;
+    font-size: 14px;
+  }
+  
+  .btnsGroup a {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    color: #0d6efd;
+  }
+  .result_ul {
+    display: flex;
+        flex-wrap: wrap;
+  }
+  .result_ul li {
+    display: flex;
+    align-items: center;
+    width: 33.33%;
+    padding: 10px 20px 10px 0;
+  }
+  .selectedDetails {
+    padding: 5px 15px;
+    background: #ffffff;
+    border-radius: 12px;
+}
+.iConteXt_List li label {
+    font-size: 13px;
+    color: #4a4f57;
+    display: inline-block;
+}
+.recommendedOperators h4 {
+    font-size: 22px;
+    padding: 10px 16px;
+    border-radius: 10px 10px 0 0;
+    background: #38598f !important;
+    position: relative;
+    color: #fff;
+    z-index: 9;
+    font-size: 28px;
+    font-weight: 300;
+    margin: 0;
+}
+.recommendedOperators ul {
+    margin: 6px 16px;
+    display: flex;
+    flex-direction: column;
+}
+.recommendedOperators ul li {
+    background: rgba(13, 18, 26, 0.55);
+    margin: 10px 0;
+    border-radius: 12px;
+}
+.airlineName {
+    display: flex
+;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15px 12px;
+    border-bottom: 1px solid rgba(236, 237, 239, 0.5);
+}
+.airlineName .checkbox > label {
+    display: flex
+;
+    align-items: center;
+    cursor: pointer;
+}
+.checkbox label {
+    display: flex
+;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+
+}
+.airlineName .airlineOption, .airlineName .airlineOption a {
+    display: flex
+;
+    align-items: center;
+    transition: 0s ease-in-out;
+}
+.airlineOption a {
+    color: #b0b4bc;
+    margin: 5px 10px;
+}
+.selectedDetails {
+    padding:5px 15px; background: #ffffff; border-radius: 12px;
+}
+
+.recommendedOperators .solidBgBox { 
+    position: relative; z-index: 3; background: rgba(108,118,138,0.25); border-radius: 12px;
+}
+.recommendedOperators .solidBgBox ul { margin:6px 16px; display: flex; flex-direction: column; }
+.recommendedOperators .solidBgBox ul li { background: rgba(13,18,26,0.55); margin:10px 0; border-radius: 12px; }
+.airlineName .imgTitle div * {
+    margin: 0;
+    line-height: 1;
+    color: #e8ecf2;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+.imgTitle.d-flex.align-items-center i.bi {
+    color: #fff;
+}
+.airportBox .btnsGroup a {
+    display: inline-flex
+;
+    align-items: center;
+    gap: 5px;
+    color: #fff;
+    margin: 10px;
+    padding: 4px 15px 4px 12px;
+    background: rgba(61, 118, 199, 0.65);
+    border: 1px solid rgba(61, 118, 199, 0.65);
+    border-radius: 10px;
+    display: flex
+;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.myFlightPlan_Result .accordion-item { background: rgba(108,119,143,0.45); margin:0 0 15px; border-radius: 12px; overflow: hidden;  border: none; }
+.myFlightPlan_Result .accordion-button { 
+    font-size:14px; padding:7px 17px; color: #16181b; text-transform: uppercase; background: rgba(255,255,255,0.7);
+}
+
+.myFlightPlan_Result .accordion-button::after {
+    width: 15px; height: 15px; opacity: 1;
+    /* background: url("../images/iCon-20.svg")no-repeat center center / cover; */
+}
+
+.myFlightPlan_Result .accordion-body { padding:10px 15px; }
+.myFlightPlan_Result .accordion ul.iConteXt_List li { padding:0 15px 0 0; align-items: flex-start; }
+.myFlightPlan_Result .accordion ul.iConteXt_List label { color:#b0b4bc; }
+.myFlightPlan_Result .accordion ul.iConteXt_List p { color:#ecedef; margin:0; }
+/* Accordion Item Style */
+.myFlightPlan_Result .accordion-item {
+    background: rgba(108, 119, 143, 0.45);
+    margin: 0 0 15px;
+    border-radius: 12px;
+    overflow: hidden;
+    border: none;
+  }
+  
+ /* Wrapper Accordion Section */
+.accordion_section {
+    margin-top: 20px;
+  }
+  
+  /* Accordion Item Style */
+  .accordion_section .accordion-item {
+    background: rgba(108, 119, 143, 0.45);
+    margin: 0 0 15px;
+    border-radius: 12px;
+    overflow: hidden;
+    border: none;
+  }
+  
+  /* Accordion Header Button Style */
+  .accordion_section .accordion-button {
+    font-size: 14px;
+    padding: 7px 17px;
+    color: #16181b;
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: none !important;
+    font-weight: 600;
+  }
+  
+  /* Accordion Arrow Icon */
+  .accordion_section .accordion-button::after {
+    width: 15px;
+    height: 15px;
+    /* background: url('../images/iCon-20.svg') no-repeat center center / cover; */
+    opacity: 1;
+  }
+  
+  /* When accordion is open */
+  .accordion_section .accordion-button:not(.collapsed) {
+    background: rgba(255, 255, 255, 0.9);
+    color: #16181b;
+  }
+  
+  /* Accordion Body Style */
+  .accordion_section .accordion-body {
+    padding: 10px 15px;
+    background: transparent;
+  }
+  
+  /* List inside Accordion */
+  .accordion_section .accordion-body ul.iConteXt_List {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  /* List Items */
+  .accordion_section .accordion-body ul.iConteXt_List li {
+    display: flex;
+    align-items: flex-start;
+    padding: 0 15px 10px 0;
+  }
+  
+  /* Label inside List */
+  .accordion_section .accordion-body ul.iConteXt_List label {
+    color: #b0b4bc;
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 2px;
+    display: block;
+  }
+  
+  /* Paragraph inside List */
+  .accordion_section .accordion-body ul.iConteXt_List p {
+    color: #ecedef;
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  /* Icon style inside List */
+  .accordion_section .accordion-body ul.iConteXt_List i {
+    font-size: 22px;
+    color: #0d6efd;
+    margin-right: 10px;
+    flex-shrink: 0;
+  }
+  ul.iConteXt_List.w-100 {
+    display: flex;
+    flex-wrap: wrap;
+}
+.accordion p {
+    color: #e8ecf2;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+main.result_page {
+    padding: 150px 0;
+}

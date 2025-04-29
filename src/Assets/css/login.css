@@ -1,0 +1,204 @@
+/* Overall Page Styles */
+.innerPage .Hero,
+.logInPage .Hero {
+  padding-bottom: 70px;
+  position: relative;
+  overflow: hidden;
+}
+
+.teXt h2 {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.teXtContent p a {
+  color: #3d76c7;
+  font-weight: 600;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+/* Container Styles */
+.logInPage .borderBox {
+  position: relative;
+  padding: 7px;
+  margin: 25px auto 0;
+  max-width: 950px;
+  border-radius: 15px;
+}
+
+.logInPage .borderBox::before,
+.logInPage .borderBox::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 15px;
+}
+
+.logInPage .borderBox::before {
+  z-index: 1;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(-90deg, rgb(221, 223, 233) 0%, rgb(68, 70, 79) 100%);
+}
+
+.logInPage .borderBox::after {
+  z-index: 2;
+  left: 2px;
+  right: 2px;
+  top: 2px;
+  bottom: 2px;
+  background: #2a2d36;
+}
+
+/* Form Container */
+.logInPage .formBox {
+  position: relative;
+  z-index: 3;
+  padding: 145px 15px 15px;
+  border-radius: 12px;
+  background: rgba(108, 118, 138, 0.25) url("../image/BG-Login.png") no-repeat center top / 100%;
+}
+
+/* Input Fields */
+.inputBox {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.inputBox .form-control {
+  width: 100%;
+  height: 45px;
+  padding: 0 15px 0 45px;
+  color: #b0b4bc;
+  background: #202731;
+  border: 2px solid #202731;
+  border-radius: 12px;
+  outline: none;
+}
+.form-group i.bi {
+  color: #ffffffa1;
+}
+.inputBox .form-control::placeholder {
+  color: #ccc;
+}
+form .btn {
+  min-width: 120px;
+}
+a.btn, button.btn {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.inputBox .iCon {
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.inputBox .showHide {
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+/* Login Button */
+.login-btn {
+  padding: 8px 30px;
+  background-color: #3d76c7;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #2e5ba5;
+}
+
+/* Footer Links */
+.RegisterForgetPassword {
+  color: #ccc;
+  font-size: 14px;
+}
+
+.RegisterForgetPassword a {
+  color: #3d76c7;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.register-links p {
+  margin: 0;
+  line-height: 1.4;
+}
+.innerPage .Hero {
+  padding-bottom: 70px;
+}
+section.Hero.logInPage {
+  padding: 150px 0 150px;
+  position: relative;
+}
+form .form-control, form select.form-control {
+  width: 100%;
+  height: 45px;
+  /* padding: 0 15px 0 45px; */
+  color: #b0b4bc;
+  background: #202731;
+  border: 2px solid #202731;
+  border-radius: 12px;
+  outline: none;
+}
+form .form-control:focus, form select.form-control:focus {
+  color: #b0b4bc;
+  background: #202731;
+  border: 2px solid #ecedef;
+}
+.login-btn {
+  background: linear-gradient(to bottom, #428bfa 0%, #2b68c5 100%);
+  color: #fff;
+  padding: 8px 30px;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 12px;
+  border: 2px solid #fff;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.3), 0 2px 4px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+  background: linear-gradient(to bottom, #2b68c5 0%, #428bfa 100%);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+}
+
+.register-links p {
+  margin: 0;
+  line-height: 1.4;
+}
+.bi-asterisk::before {
+  content: "\f151";
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 767.98px) {
+  .logInPage .formBox {
+    padding-top: 80px;
+  }
+
+  .RegisterForgetPassword {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+}

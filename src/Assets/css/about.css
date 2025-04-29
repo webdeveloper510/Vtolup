@@ -1,0 +1,97 @@
+h2 {
+  font-family: 'Vinila Test', sans-serif;
+}
+h1, h2, h3, h4, h5, h6, p, ul {
+  font-family: 'Vinila Test', sans-serif;
+}
+
+.Hero.aboutUs {
+    padding: 150px 0;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .Hero.aboutUs .BG img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    border-radius: 0;
+  }
+  
+  /* Section Heading */
+  .teXt h2 {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 500;
+  }
+  
+  /* Paragraph Styling */
+  .teXtContent p {
+    color: #ccc;
+    font-size: 16px;
+    margin-bottom: 1.2rem;
+  }
+  
+  .teXtContent p a {
+    color: #3d76c7;
+    font-weight: 600;
+    font-style: italic;
+    text-decoration: underline;
+  }
+  
+  /* Gradient Border Effect */
+  .aboutUs .borderBox {
+    position: relative;
+    padding: 7px;
+    margin: 25px auto 0;
+    max-width: 950px;
+    border-radius: 15px;
+  }
+  
+  .aboutUs .borderBox::before,
+  .aboutUs .borderBox::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 15px;
+  }
+  
+  .aboutUs .borderBox::before {
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(-90deg, rgb(221, 223, 233) 0%, rgb(68, 70, 79) 100%);
+  }
+  
+  .aboutUs .borderBox::after {
+    z-index: 2;
+    left: 2px;
+    right: 2px;
+    top: 2px;
+    bottom: 2px;
+    background: #2a2d36;
+  }
+  
+  /* Inner Content Box */
+  .aboutUs .formBox {
+    position: relative;
+    z-index: 3;
+    padding: 145px 15px 15px;
+    border-radius: 12px;
+    background: rgba(108, 118, 138, 0.25) url("../image/BG-aboutUs.png") no-repeat center top / 100%;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 767.98px) {
+    .Hero.aboutUs {
+      padding: 100px 0;
+    }
+  
+    .aboutUs .formBox {
+      padding-top: 80px;
+    }
+  }
+  

@@ -1,0 +1,408 @@
+/* Background section styling */
+.Hero.MyFlightPlan_Sec {
+    padding: 150px 0;
+    position: relative;
+    /* background-color: #0e1218; */
+    color: #fff;
+  }
+  
+  .Hero.MyFlightPlan_Sec .BG img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    top: 0;
+    left: 0;
+  }
+  
+  /* Main container and card box */
+  .borderBox {
+    position: relative;
+    padding: 7px;
+    margin: 25px auto 0;
+    max-width: 950px;
+    border-radius: 16px;
+  }
+  
+  .borderBox::before,
+  .borderBox::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 16px;
+  }
+  
+  .borderBox::before {
+    z-index: 1;
+    inset: 0;
+    background: linear-gradient(90deg, #6ca8ff, #415fcb);
+  }
+  
+  .borderBox::after {
+    z-index: 2;
+    inset: 2px;
+    background: rgba(20, 24, 32, 0.9);
+  }
+  
+  .formBox {
+    position: relative;
+    z-index: 3;
+    /* padding: 30px; */
+    border-radius: 14px;
+    background: transparent;
+    backdrop-filter: blur(16px);
+    background: rgba(108, 118, 138, 0.25);
+    border-radius: 10px;
+  }
+  .formBox form {
+    padding: 0px 30px 30px 30px;
+}
+
+  .teXt h2 {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 600;
+    position: relative;
+    z-index: 2;
+  }
+  .flightPlan_Steps {
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .flightPlan_Steps .step {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #1f2631;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #aaa;
+    font-size: 14px;
+    transition: all 0.3s ease;
+  }
+  
+  .flightPlan_Steps .step.active {
+    background: #2e7df8;
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  .flightPlan_Steps .step i {
+    font-size: 20px;
+    margin-bottom: 4px;
+  }
+  
+  .hTabs .nav-tabs {
+    border-bottom: none;
+    display: flex;
+    gap: 8px;
+  }
+  
+  .hTabs .nav-tabs .nav-link {
+    background-color: #1f2631;
+    color: #ccc;
+    border: none;
+    border-radius: 12px;
+    padding: 8px 20px;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+  }
+  
+  .hTabs .nav-tabs .nav-link i {
+    margin-right: 8px;
+  }
+  
+  .hTabs .nav-tabs .nav-link.active {
+    background-color: #fff;
+    color: #0e1218;
+    font-weight: 600;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+
+  .MyFlightPlan_Sec .formBox label {
+    font-weight: 500;
+    color: #e8ecf2;
+    margin-bottom: 10px;
+    display: block;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+input#toBeDetermined {
+  min-width: 25px;
+  min-height: 25px;
+  background: transparent;
+}
+  
+  /* Next button */
+  button.btn {
+    font-size: 1rem;
+    border-radius: 12px;
+    box-shadow: none;
+    transition: all 0.3s ease;
+}
+  
+   .borderBox::before {
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(-90deg, rgb(221, 223, 233) 0%, rgb(68, 70, 79) 100%);
+}
+.borderBox::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 15px;
+}
+.hTabs {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background: #0d111a;
+    border: none;
+    border-radius: 12px;
+    padding: 0px; 
+    gap: 8px; 
+}
+
+.hTabs .btn {
+    width: 100%;
+    background: rgba(236, 232, 239, 0);
+    padding: 8px 16px;
+    border-radius: 12px;
+    display: flex;
+}
+
+
+.hTabs .btn.active {
+    background: #ecedef;
+}
+
+/* Hover and focus states */
+.hTabs .btn:hover, 
+.hTabs .btn:focus {
+    border: none;
+    outline: none;
+}
+
+/* Specific for dark/light buttons if needed */
+.hTabs .btn-dark {
+    background-color: #0d111a;
+    color: #fff;
+}
+.hTabs .btn-light {
+    background-color: #f8f9fa;
+    color: #000;
+}
+
+.hTabs .btn:hover {
+  border-color: #fff !important;
+  border: 1px solid #fff !important;
+}
+
+label.form-check-label {
+  margin-bottom: 0px !important;
+  margin-left: 12px;
+}
+
+
+
+
+.counterBlk .counter .counter_btn {
+  background: #3d76c7;
+  width: 25px;
+  height: 25px;
+  min-width: 25px;
+  min-height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  position: relative;
+}
+
+.counter {
+  background: #c3c5c9;
+  border-radius: 20px;
+  padding: 3px;
+}
+
+.counterBlk .counter input {
+  width: 30px;
+  font-weight: 700;
+  line-height: 24px;
+  height: 24px;
+  color: #16181b;
+  background: #c3c5c9;
+  padding: 0;
+  z-index: 1;
+  border: none;
+  outline: none;
+}
+.counterBlk {
+  display: flex
+;
+  align-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background: rgba(13, 18, 26, 0.55);
+  border: none;
+  border-radius: 12px;
+  padding: 12px 15px;
+}
+.step_payload input.form-control::placeholder {
+  color: #fff;
+}
+.step_Origins input.form-control::placeholder {
+  color: #fff;
+}
+.whiteBox {
+  margin: 10px 0;
+  padding: 15px;
+  background: rgba(10, 11, 15, 0.35);
+  border-radius: 12px;
+}
+select.form-select {
+  width: 100%;
+  height: 45px;
+  /* padding: 0 15px 0 45px; */
+  color: #b0b4bc;
+  background: #202731;
+  border: 2px solid #202731;
+  border-radius: 12px;
+  outline: none;
+}
+input.react-datepicker-ignore-onclickoutside.form-control::placeholder {
+  color: #fff;
+}
+input.form-control::placeholder {
+  color: #fff;
+}
+.whiteBox input.form-control {
+  padding-left: 20px;
+}
+.flightPlan_Steps {
+  background: linear-gradient(90deg, #2f4fbb 0%, #3ba2c1 100%);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 10px 20px;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+.nextStepBtn {
+  background: linear-gradient(90deg, #2f4fbb 0%, #3ba2c1 100%);
+}
+.stepItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  font-weight: 400;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.stepItem .stepNumber {
+  width: 32px;
+  height: 32px;
+  background-color: #ffffff;
+  color: #2f4fbb;
+  font-weight: 600;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #2f4fbb;
+  font-size: 14px;
+}
+
+.stepItem .stepLabel {
+  font-size: 15px;
+  color: #fff;
+  white-space: nowrap;
+}
+
+/* Active Step Style */
+.stepItem.active .stepNumber {
+  background-color: #2f4fbb;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.stepItem.active .stepLabel {
+  font-weight: 700;
+}
+.stepItem .stepNumber {
+  width: 32px;
+  height: 32px;
+  background-color: #ffffff;
+  color: #2f4fbb;
+  font-weight: 600;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #2f4fbb;
+  font-size: 14px;
+}
+
+/* Active step */
+.stepItem.active .stepNumber {
+  background-color: #2f4fbb;
+  color: #fff;
+  border-color: #fff;
+}
+
+/* Completed step check icon */
+.stepItem.completed .stepNumber {
+  background-color: #fff;
+  color: #28a745; /* green check icon */
+  border: 2px solid #28a745;
+  font-size: 18px;
+  padding-top: 2px;
+}
+
+/* Bold label on active step */
+.stepItem.active .stepLabel {
+  font-weight: 700;
+}
+span.calender_icon {
+  background: #202731;
+  border: none;
+  border-radius: 12px;
+  margin-left: -10px !important;
+}
+
+span.calender_icon i.bi.bi-calendar-event {
+  color: #fff;
+}
+  /* Responsive */
+  @media (max-width: 767.98px) {
+    .flightPlan_Steps .step {
+      width: 60px;
+      height: 60px;
+      font-size: 12px;
+    }
+  
+    .teXt h2 {
+      font-size: 28px;
+    }
+  
+    .formBox {
+      padding: 20px;
+    }
+  }
+  
+
+
+
+
+  
