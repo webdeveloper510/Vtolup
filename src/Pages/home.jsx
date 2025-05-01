@@ -19,6 +19,9 @@ import Play2 from "../Assets/image/storePlay.png";
 const Home = () => {
   // 🧠 Step 1: useState here
   const [stops, setStops] = useState(1);
+    const [tripType, setTripType] = useState('VTOL');
+    const [passengerType, setPassengerType] = useState('Passenger');
+    const [tripOption, setTripOption] = useState('Round trip');
 
   const increaseStops = () => setStops(prev => prev + 1);
   const decreaseStops = () => setStops(prev => (prev > 0 ? prev - 1 : 0));
@@ -64,26 +67,46 @@ const Home = () => {
                       <label>Trip Details</label>
                     </Col>
                     <Col lg={6}>
-                      <div className="hTabs mb-3 d-flex gap-2">
-                        <Button variant="dark">
-                          <i className="bi bi-helicopter me-2" /> VTOL
-                        </Button>
-                        <Button variant="light">
-                          <i className="bi bi-airplane me-2" /> Airplane
-                        </Button>
-                        <Button variant="dark">
-                          <i className="bi bi-truck me-2" /> Intermodal
-                        </Button>
-                      </div>
+                        <div className="hTabs mb-3 d-flex gap-0">
+                      <Button
+                        variant={tripType === 'VTOL' ? 'light' : 'dark'}
+                        className={tripType === 'VTOL' ? 'active' : ''}
+                        onClick={() => setTripType('VTOL')}
+                      >
+                        <i className="bi bi-helicopter me-2" /> VTOL
+                      </Button>
+                      <Button
+                        variant={tripType === 'Airplane' ? 'light' : 'dark'}
+                        className={tripType === 'Airplane' ? 'active' : ''}
+                        onClick={() => setTripType('Airplane')}
+                      >
+                        <i className="bi bi-airplane me-2" /> Airplane
+                      </Button>
+                      <Button
+                        variant={tripType === 'Intermodal' ? 'light' : 'dark'}
+                        className={tripType === 'Intermodal' ? 'active' : ''}
+                        onClick={() => setTripType('Intermodal')}
+                      >
+                        <i className="bi bi-truck me-2" /> Intermodal
+                      </Button>
+                    </div>
                     </Col>
                     <Col lg={6}>
                       <div className="hTabs mb-3 d-flex gap-2">
-                        <Button variant="light">
-                          <i className="bi bi-person me-2" /> Passenger
-                        </Button>
-                        <Button variant="dark">
-                          <i className="bi bi-box-seam me-2" /> Freight
-                        </Button>
+                            <Button
+                              variant={passengerType === 'Passenger' ? 'light' : 'dark'}
+                              className={passengerType === 'Passenger' ? 'active' : ''}
+                              onClick={() => setPassengerType('Passenger')}
+                            >
+                              <i className="bi bi-person me-2" /> Passenger
+                            </Button>
+                            <Button
+                              variant={passengerType === 'Freight' ? 'light' : 'dark'}
+                              className={passengerType === 'Freight' ? 'active' : ''}
+                              onClick={() => setPassengerType('Freight')}
+                            >
+                              <i className="bi bi-box-seam me-2" /> Freight
+                            </Button>
                       </div>
                     </Col>
                     <Col xs={12}>
@@ -91,15 +114,29 @@ const Home = () => {
                     </Col>
                     <Col xs={6} className='mob_full'>
                       <div className="hTabs mb-3 d-flex gap-2">
-                        <Button variant="dark">
-                          <i className="bi bi-arrow-repeat me-2" /> Round trip
-                        </Button>
-                        <Button variant="dark">
-                          <i className="bi bi-arrow-right me-2" /> One-way
-                        </Button>
-                        <Button variant="light">
-                          <i className="bi bi-signpost-2 me-2" /> Multi-Stop
-                        </Button>
+           <Button
+             variant={tripOption === 'Round trip' ? 'light' : 'dark'}
+             className={tripOption === 'Round trip' ? 'active' : ''}
+             onClick={() => setTripOption('Round trip')}
+           >
+             <i className="bi bi-arrow-repeat me-2" /> Round trip
+           </Button>
+   
+           <Button
+             variant={tripOption === 'One-way' ? 'light' : 'dark'}
+             className={tripOption === 'One-way' ? 'active' : ''}
+             onClick={() => setTripOption('One-way')}
+           >
+             <i className="bi bi-arrow-right me-2" /> One-way
+           </Button>
+   
+           <Button
+             variant={tripOption === 'Multi-Stop' ? 'light' : 'dark'}
+             className={tripOption === 'Multi-Stop' ? 'active' : ''}
+             onClick={() => setTripOption('Multi-Stop')}
+           >
+             <i className="bi bi-signpost-2 me-2" /> Multi-Stop
+           </Button>
                       </div>
                     </Col>
 
