@@ -114,29 +114,29 @@ const Home = () => {
                     </Col>
                     <Col xs={6} className='mob_full'>
                       <div className="hTabs mb-3 d-flex gap-2">
-           <Button
-             variant={tripOption === 'Round trip' ? 'light' : 'dark'}
-             className={tripOption === 'Round trip' ? 'active' : ''}
-             onClick={() => setTripOption('Round trip')}
-           >
-             <i className="bi bi-arrow-repeat me-2" /> Round trip
-           </Button>
-   
-           <Button
-             variant={tripOption === 'One-way' ? 'light' : 'dark'}
-             className={tripOption === 'One-way' ? 'active' : ''}
-             onClick={() => setTripOption('One-way')}
-           >
-             <i className="bi bi-arrow-right me-2" /> One-way
-           </Button>
-   
-           <Button
-             variant={tripOption === 'Multi-Stop' ? 'light' : 'dark'}
-             className={tripOption === 'Multi-Stop' ? 'active' : ''}
-             onClick={() => setTripOption('Multi-Stop')}
-           >
-             <i className="bi bi-signpost-2 me-2" /> Multi-Stop
-           </Button>
+                        <Button
+                          variant={tripOption === 'Round trip' ? 'light' : 'dark'}
+                          className={tripOption === 'Round trip' ? 'active' : ''}
+                          onClick={() => setTripOption('Round trip')}
+                        >
+                          <i className="bi bi-arrow-repeat me-2" /> Round trip
+                        </Button>
+                
+                        <Button
+                          variant={tripOption === 'One-way' ? 'light' : 'dark'}
+                          className={tripOption === 'One-way' ? 'active' : ''}
+                          onClick={() => setTripOption('One-way')}
+                        >
+                          <i className="bi bi-arrow-right me-2" /> One-way
+                        </Button>
+                
+                        <Button
+                          variant={tripOption === 'Multi-Stop' ? 'light' : 'dark'}
+                          className={tripOption === 'Multi-Stop' ? 'active' : ''}
+                          onClick={() => setTripOption('Multi-Stop')}
+                        >
+                          <i className="bi bi-signpost-2 me-2" /> Multi-Stop
+                        </Button>
                       </div>
                     </Col>
 
