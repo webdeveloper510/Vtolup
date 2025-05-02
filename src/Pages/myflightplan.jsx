@@ -28,7 +28,7 @@ const steps = [
 ];
 
 const MyFlightPlan = () => {
-  const [currentStep, setCurrentStep] = useState(0);
+  const [currentStep, setCurrentStep] = useState(1);
   const [tripType, setTripType] = useState('VTOL');
   const [passengerType, setPassengerType] = useState('Passenger');
   const [tripOption, setTripOption] = useState('Round trip');
